@@ -108,13 +108,13 @@
           "modifyvm",
           "{{.Name}}",
           "--memory",
-          "1024"
+          "2048"
         ],
         [
           "modifyvm",
           "{{.Name}}",
           "--cpus",
-          2
+          4
         ]
       ]
     },
@@ -148,5 +148,6 @@
         "cpuid.coresPerSocket": "1"
       }
     }
-  ]
+  ],
+  "post-processors" : ["vagrant"]
 }

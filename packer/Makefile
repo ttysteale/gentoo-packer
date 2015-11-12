@@ -22,7 +22,7 @@ build-qemu-debug:
 	/usr/bin/time -v packer build -debug --only=qemu $(PACKER_JSON)
 
 build-vbox:
-	/usr/bin/time -v packer build --only=virtualbox-iso $(PACKER_JSON)
+	/opt/packer/packer build --only=virtualbox-iso $(PACKER_JSON)
 
 build-vbox-debug:
 	/usr/bin/time -v packer build -debug --only=virtualbox-iso $(PACKER_JSON)

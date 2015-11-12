@@ -3,5 +3,5 @@ source /etc/profile
 
 # install Puppet
 chroot "$chroot" /bin/bash <<DATAEOF
-emerge puppet
+RUBY_TARGETS="ruby20" emerge puppet
 DATAEOF

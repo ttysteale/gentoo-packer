@@ -12,6 +12,8 @@ DATAEOF
 
 chroot "$chroot" /bin/bash <<DATAEOF
 env-update && source /etc/profile
-emerge --autounmask-write ruby:1.9
-eselect ruby set ruby19
+emerge --autounmask-write ruby:2.0
+etc-update --automode -5
+emerge ruby:2.0
+eselect ruby set ruby20
 DATAEOF
